@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="text_f05_28_c07_212630">
+        <item name="android:textColor">#2c2c2c</item>
+        <item name="android:textSize">@dimen/f05_28</item>
+    </style>
+
+    <style name="text_f06_24_c07_212630">
+        <item name="android:textColor">#2c2c2c</item>
+        <item name="android:textSize">@dimen/f06_24</item>
+    </style>
+
+    <style name="text_20_c05_666666">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/f07_20</item>
+    </style>
+    <style name="text_20_c09_999999">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">@dimen/f07_20</item>
+    </style>
+
+</resources>

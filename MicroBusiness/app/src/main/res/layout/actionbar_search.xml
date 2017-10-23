@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--1 标题栏-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_search_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/dimen_24px"
+        android:paddingRight="@dimen/dimen_24px"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/btn_search_right"
+        style="@style/text_fs_30_c07_212630"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_20px"
+        android:layout_marginRight="@dimen/dimen_20px"
+        android:background="@null"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <com.nino.micro.business.view.MEditText
+        android:id="@+id/et_search"
+        style="@style/text_fs_26_c07_212630"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60px"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_search_right"
+        android:layout_toRightOf="@id/iv_search_left"
+        android:background="@drawable/shape_solid_black_95_corners_6px_37"
+        android:drawablePadding="@dimen/dimen_16px"
+        android:drawableRight="@drawable/home_search_gray"
+        android:ellipsize="end"
+        android:hint="搜索商品名/症状/疾病名"
+        android:paddingLeft="@dimen/dimen_20px"
+        android:paddingRight="@dimen/dimen_20px"
+        android:singleLine="true"
+        android:textColorHint="@color/c09_979ca8"
+        android:textCursorDrawable="@drawable/cursor_blue" />
+
+</RelativeLayout>

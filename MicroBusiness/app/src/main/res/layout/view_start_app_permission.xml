@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:btn="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_solid_white_corners_6px">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_fs_36_c07_212630"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_38px"
+        android:text="@string/perm_start_app_title" />
+
+    <include
+        android:id="@+id/vw_telephone"
+        layout="@layout/item_view_start_app_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="@dimen/dimen_38px" />
+
+    <include
+        android:id="@+id/vw_storage"
+        layout="@layout/item_view_start_app_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vw_telephone"
+        android:layout_marginTop="@dimen/dimen_38px" />
+
+    <include
+        android:id="@+id/vw_location"
+        layout="@layout/item_view_start_app_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vw_storage"
+        android:layout_marginTop="@dimen/dimen_38px" />
+
+    <com.nino.micro.business.view.MButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_88px"
+        android:layout_below="@+id/vw_location"
+        android:layout_marginTop="@dimen/dimen_38px"
+        android:text="@string/next_step"
+        btn:show_model="red_up_square_down_circular" />
+
+</RelativeLayout>

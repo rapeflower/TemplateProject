@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="permission">
+        <!-- <item>@string/permission_get_accounts</item>-->
+        <item>@string/permission_read_accounts</item>
+        <item>@string/permission_call_phone</item>
+        <item> @string/permission_read_phone</item>
+        <item>@string/permission_camera</item>
+        <item>@string/permission_access_fine_location</item>
+        <!--  <item>@string/permission_access_coarse_location</item>-->
+        <item>@string/permission_record_audio</item>
+        <!--  <item>@string/permission_read_external</item>-->
+        <item>@string/permission_white_external</item>
+        <!--  <item> @string/permission_receive_msm</item>-->
+        <item> @string/permission_read_msm</item>
+    </string-array>
+</resources>

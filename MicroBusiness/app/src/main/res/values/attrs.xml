@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ActionBar
+         设置ActionBar的样式  -->
+    <declare-styleable name="ActionBar">
+        <!--背景图片-->
+        <attr name="background" format="reference|color" />
+
+        <attr name="title_style">
+            <!--正常模式-->
+            <enum name="normal" value="0" />
+            <!--搜索框-->
+            <enum name="search" value="1" />
+            <!--自定义  view-->
+            <enum name="self_middle_layout" value="2" />
+        </attr>
+        <attr name="search_left_style">
+            <!--左边为主页-->
+            <enum name="left_first" value="0" />
+            <!--左边为下一级页面-->
+            <enum name="left_second" value="1" />
+        </attr>
+        <!--add 搜索框左边的第一个控件是否可见-->
+        <attr name="search_left_image_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <!--搜索框左边的控件的图片-->
+        <attr name="search_left_image" format="reference" />
+        <!--搜索框右边控件的文字-->
+        <attr name="search_right_text" format="reference|string" />
+        <!--搜索框右边控件的图片-->
+        <attr name="search_right_image" format="reference" />
+        <!--搜索框调整右边控件的图片的大小-->
+        <!--设置为false表示使用图片实际大小，true则计算出一个比例。-->
+        <attr name="search_right_image_adjust" format="boolean" />
+        <!--搜索框的hint文字-->
+        <attr name="search_hint" format="reference|string" />
+        <!--搜索框的hint文字 style-->
+        <attr name="search_hint_color" format="color" />
+        <!--add搜索框edittext的背景图片-->
+        <attr name="search_edittext_background" format="reference" />
+        <!--add搜索框edittext的左边图片-->
+        <attr name="search_edittext_drawable_left" format="reference" />
+        <!--add搜索框edittext的上边图片-->
+        <attr name="search_edittext_drawable_top" format="reference" />
+        <!--add搜索框edittext的右边图片-->
+        <attr name="search_edittext_drawable_right" format="reference" />
+        <!--add搜索框edittext的下边图片-->
+        <attr name="search_edittext_drawable_bottom" format="reference" />
+        <!--add搜索框edittext的文字样式-->
+        <attr name="search_edittext_style" format="reference" />
+
+        <!--标题-->
+        <attr name="title" format="reference|string" />
+        <!--左边的第一个控件是否可见-->
+        <attr name="left_first_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+
+        <!--左边的第一个控件的文字-->
+        <attr name="left_first_text" format="reference|string" />
+        <!--左边的第一个控件的图片-->
+        <attr name="left_first_image" format="reference" />
+
+        <!--左边的第二个控件是否可见-->
+        <attr name="left_second_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <!--左边的第二个控件的文字-->
+        <attr name="left_second_text" format="reference|string" />
+
+        <!--右边的第一个控件的文字-->
+        <attr name="right_text" format="reference|string" />
+        <!--右边的第一个控件的图片-->
+        <attr name="right_image" format="reference" />
+        <!--add right text的文字样式-->
+        <attr name="right_text_style" format="reference" />
+
+
+        <!--右边的第一个控件是否可见-->
+        <attr name="right_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+
+        <!--右边的为购物车新增的控件是否可见-->
+        <attr name="right_cart_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+
+        <!--右边的为购物车新增的控件的图片-->
+        <attr name="right_cart_image" format="reference" />
+
+        <!--底部的分割线是否可见-->
+        <attr name="bottom_divider_visibility">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+    </declare-styleable>
+
+    <!--MButton-->
+    <declare-styleable name="MButton">
+        <!--model_style-->
+        <attr name="show_model">
+            <enum name="red_square" value="1" />
+            <enum name="red_circular" value="2" />
+            <enum name="yellow_square" value="3" />
+            <enum name="gray_circular" value="4" />
+            <enum name="red_up_square_down_circular" value="5" />
+            <enum name="gray_circular_stroke_transparent" value="6" />
+            <enum name="red_circular_stroke_transparent" value="7" />
+            <enum name="yellow_circular" value="8" />
+        </attr>
+    </declare-styleable>
+</resources>

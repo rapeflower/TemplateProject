@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_solid_c12_f8f8f8_corners_6px_01">
+
+    <LinearLayout
+        android:id="@+id/ll_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_fs_36_c07_212630"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_40px"
+            android:layout_marginRight="@dimen/dimen_40px"
+            android:layout_marginTop="@dimen/dimen_40px"
+            android:layout_marginBottom="@dimen/dimen_40px"
+            android:background="@color/c12_f8f8f8"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_40px"
+            android:layout_marginRight="@dimen/dimen_40px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_message"
+                style="@style/text_fs_28_c08_5f6575"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tv_message"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottom_remind"
+            style="@style/text_fs_24_c08_5f6575"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c06_fdfad5"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/dimen_20px"
+            android:paddingLeft="@dimen/dimen_30px"
+            android:paddingRight="@dimen/dimen_30px"
+            android:paddingTop="@dimen/dimen_20px" />
+
+        <com.nino.micro.business.view.MButton
+            xmlns:j1mbtn="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_88px"
+            android:text="@android:string/ok"
+            j1mbtn:show_model="red_up_square_down_circular" />
+
+        <LinearLayout
+            android:id="@+id/ll_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_88px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/text_fs_30_c07_212630"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_common_red_dialog_bottom_left"
+                android:gravity="center"
+                android:text="@android:string/cancel" />
+
+            <View
+                android:id="@+id/vw_divider"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#b5b5b5" />
+
+            <Button
+                android:id="@+id/btn_ok_right"
+                style="@style/text_fs_30_c07_212630"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_common_red_dialog_bottom_right"
+                android:gravity="center"
+                android:text="@android:string/ok"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_redcommon_dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="@dimen/dimen_10px"
+        android:paddingTop="@dimen/dimen_10px"
+        android:src="@drawable/icon_close"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

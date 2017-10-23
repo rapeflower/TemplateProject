@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <LinearLayout
+        android:id="@+id/ll_left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_left"
+            style="@style/text_fs_30_c07_212630"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_20px"
+            android:paddingRight="@dimen/dimen_20px" />
+        <!--有的时候需要在回退按钮后面需要一个关闭按钮，
+        例如如果打开的webview的层次比较多时，需要该关闭按钮关闭整个页面-->
+        <TextView
+            android:id="@+id/tv_second_left"
+            style="@style/text_fs_30_c07_212630"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="@dimen/dimen_6px"
+            android:paddingTop="@dimen/dimen_6px"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_fs_36_c07_212630"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLength="15"
+        android:singleLine="true" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_right_cart"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="@dimen/actionbar_height"
+            android:visibility="gone">
+            <!-- android:padding="@dimen/dimen_18px"
+             android:layout_marginRight="@dimen/dimen_6px"-->
+
+            <Button
+                android:id="@+id/btn_right_cart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                style="@style/text_fs_20_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="@dimen/dimen_16px"
+                android:layout_marginTop="@dimen/dimen_20px"
+                android:background="@drawable/dot_solid_ff3b2f_corners_20px_stroke_c06_dddddd"
+                android:paddingLeft="@dimen/dimen_6px"
+                android:paddingRight="@dimen/dimen_6px"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_right"
+            style="@style/text_fs_30_c07_212630"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_6px"
+            android:paddingTop="@dimen/dimen_6px"
+            android:paddingRight="@dimen/dimen_20px"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_6px"
+            android:paddingRight="@dimen/dimen_24px"
+            android:paddingTop="@dimen/dimen_6px"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

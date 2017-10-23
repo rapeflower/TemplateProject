@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:j1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_common_dialog_top"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_40px">
+        <!--仅仅用来保持dialog match_parent-->
+        <View
+            android:id="@+id/vw_keep_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_fs_34_c07_212630"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20px"
+            android:layout_marginRight="@dimen/dimen_20px"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <!--android:singleLine="true"
+            android:gravity="center_horizontal"-->
+
+        <LinearLayout
+            android:id="@+id/ll_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20px"
+            android:layout_marginRight="@dimen/dimen_20px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_message"
+                style="@style/text_fs_26_c07_212630"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <com.nino.micro.business.view.MEditText
+            android:id="@+id/et_user_input"
+            style="@style/text_fs_26_c07_212630"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48px"
+            android:layout_marginBottom="@dimen/dimen_24px"
+            android:layout_marginLeft="@dimen/dimen_32px"
+            android:layout_marginRight="@dimen/dimen_32px"
+            android:layout_marginTop="@dimen/dimen_46px"
+            android:background="@drawable/shape_solid_white_stroke_c07_212630_31"
+            android:padding="0px"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/cursor_blue"
+            android:visibility="gone"
+            j1:clear_button_mode="never" />
+
+        <View
+            android:id="@+id/vw_ver_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dimen_40px"
+            android:background="@color/alpha_20_black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_88px"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/text_fs_34_0079ff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bg_common_dialog_bottom_left"
+            android:gravity="center"
+            android:text="@android:string/cancel"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/vw_divider"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/alpha_20_black" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/text_fs_34_0079ff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bg_common_dialog_bottom_right"
+            android:gravity="center"
+            android:text="@android:string/ok"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MicroBusiness</string>
+
+
+    <string name="next_step">下一步</string>
+    <string name="call">呼叫</string>
+    <string name="date_today">今天</string>
+    <string name="date_yesterday">昨天</string>
+
+    <!-- 权限相关 -->
+    <string name="permission_get_accounts">联系人</string>
+    <string name="permission_read_accounts">联系人权限</string>
+    <string name="permission_read_phone">电话权限</string>
+    <string name="permission_call_phone">拨打电话权限</string>
+    <string name="permission_camera">相机权限</string>
+    <string name="permission_access_fine_location">定位权限</string>
+    <string name="permission_access_coarse_location">定位权限</string>
+    <string name="permission_read_external">存储权限</string>
+    <string name="permission_white_external">存储权限</string>
+    <string name="permission_record_audio">录音权限</string>
+    <string name="permission_read_msm">读取消息权限</string>
+    <string name="permission_receive_msm">发送消息权限</string>
+    <string name="perm_title">无法使用%1$s</string>
+    <string name="perm_message">请在"权限管理"中允许小柴微商访问您的%1$s</string>
+    <string name="perm_start_app_title">需要以下权限</string>
+    <string name="perm_start_app_telephone_title">电话权限</string>
+    <string name="perm_start_app_storage_title">存储权限</string>
+    <string name="perm_start_app_location_title">定位权限</string>
+    <string name="perm_start_app_telephone_subtitle">识别身份,给您更人性化体验</string>
+    <string name="perm_start_app_storage_subtitle">自动清理,节省空间</string>
+    <string name="perm_start_app_location_subtitle">为您推荐更精准</string>
+    <string name="perm_open">开启</string>
+
+</resources>

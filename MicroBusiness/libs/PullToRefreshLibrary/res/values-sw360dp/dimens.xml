@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines.
+    由于UI给的是IOS的UI图，所以该文件转换的规则为 （UI标注的px/2） x (360/320)
+    -->
+    <dimen name="dimen_10px">6dp</dimen>
+    <dimen name="dimen_20px">11dp</dimen>
+    <dimen name="dimen_30px">17dp</dimen>
+    <dimen name="dimen_60px">34dp</dimen>
+    <dimen name="dimen_70px">39dp</dimen>
+    <dimen name="dimen_320px">180dp</dimen>
+    <dimen name="dimen_160px">90dp</dimen>
+
+</resources>

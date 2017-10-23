@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_item_icon"
+        android:layout_width="@dimen/dimen_44px"
+        android:layout_height="@dimen/dimen_44px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_60px"
+        android:layout_marginRight="@dimen/dimen_20px"
+        android:scaleType="fitXY"
+        android:src="@drawable/permission_phone" />
+
+    <TextView
+        android:id="@+id/tv_item_title"
+        style="@style/text_fs_28_c08_5f6575"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_item_icon"
+        android:text="@string/perm_start_app_telephone_title" />
+
+    <TextView
+        android:id="@+id/tv_item_sub_title"
+        style="@style/text_fs_28_c01_fa4532"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_title"
+        android:layout_toRightOf="@+id/iv_item_icon"
+        android:text="@string/perm_start_app_telephone_subtitle" />
+
+</RelativeLayout>

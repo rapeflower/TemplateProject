@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PhotoSelectorLibrary</string>
+    <string name="psl_go_back">返回</string>
+    <string name="psl_recent_photos">最近照片</string>
+    <string name="psl_confirm">确定</string>
+    <string name="psl_preview">预览</string>
+    <string name="psl_take_photo">拍摄照片</string>
+    <string name="psl_pic_select">图片选择</string>
+    <string name="psl_pic_preview">图片预览</string>
+    <string name="psl_click_pic">点击图片</string>
+</resources>
